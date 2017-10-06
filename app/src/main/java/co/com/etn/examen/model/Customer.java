@@ -23,6 +23,10 @@ public class Customer {
     @Expose
     private List<Phone> phoneList;
 
+    @SerializedName("_id")
+    @Expose
+    private String id;
+
     public Customer() {
     }
 
