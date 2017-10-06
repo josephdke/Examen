@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ArquitecturaMVPBase</string>
+    <string name="product_name">Nombre</string>
+    <string name="product_description">Descripción</string>
+    <string name="product_quantity">Cantidad</string>
+    <string name="product_price">Precio</string>
+    <string name="loading_message">Cargando...</string>
+    <string name="create_button">Crear</string>
+    <string name="okResponseCreateProduct">Producto Creado Correctamente</string>
+    <string name="errResponseCreateProduct">Error Creando el Producto</string>
+    <string name="okResponseCreateConsumer">Cliente Creado Correctamente</string>
+    <string name="errResponseCreateConsumer">Error Creando el Cliente</string>
+
+    <string name="text_surname">Apellidos</string>
+    <string name="text_name">Nombre</string>
+    <string name="text_phone_type">Tipo de Teléfono</string>
+    <string name="text_phone_number">Número de Teléfono</string>
+    <string name="text_button">Crear producto</string>
+
+    <string name="name">Nombre</string>
+    <string name="description">Descripción</string>
+    <string name="price">Precio</string>
+    <string name="quantity">Cantidad</string>
+    <string name="validate_internet">Error de conectividad</string>
+    <string name="correct">Se ha eliminado correctamente</string>
+    <string name="error_delete_product">Ha ocurrido un error eliminando el producto</string>
+    <string name="deleteProduct">Producto eliminado</string>
+    <string name="error">Error</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="text_latitud">Latitud</string>
+    <string name="text_longitud">Longitud</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+</resources>

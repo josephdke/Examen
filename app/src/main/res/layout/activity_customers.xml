@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+    </android.support.v4.widget.ContentLoadingProgressBar>
+
+    <ListView
+        android:id="@+id/customers_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_launch_createproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_add_24dp"
+        />
+
+
+</RelativeLayout>

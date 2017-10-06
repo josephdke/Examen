@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="?android:attr/progressBarStyleSmall">
+    </android.support.v4.widget.ContentLoadingProgressBar>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/create_customer_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/text_name"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/create_customer_edittext_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/text_surname"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/create_customer_edittext_phone_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/text_phone_type"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/create_customer_edittext_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/text_phone_number"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/create_customer_edittext_latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/text_latitud"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/create_customer_edittext_longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="@string/text_longitud"
+            android:backgroundTint="@color/colorGray"
+            android:typeface="serif"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/product_btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorGray"
+        android:onClick="buttonOnClick"
+        android:text="@string/create_button"
+        android:typeface="serif"
+        android:enabled="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
