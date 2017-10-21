@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import co.com.etn.examen.R;
+import co.com.etn.examen.helper.Constants;
 import co.com.etn.examen.model.Customer;
 import co.com.etn.examen.presenter.CustomersPresenter;
 import co.com.etn.examen.repository.CustomerRepository;
@@ -19,10 +20,12 @@ import co.com.etn.examen.views.adapter.CustomerAdapter;
 
 public class CustomersActivity extends BaseActivity<CustomersPresenter> implements ICustomersView {
 
+    ArrayList<Customer> customersList;
     private ListView customersListView;
     private CustomerAdapter customerAdapter;
     private ContentLoadingProgressBar progress;
     private FloatingActionButton buttonLaunchCreate;
+    private FloatingActionButton buttonLaunchMap;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,11 +38,25 @@ public class CustomersActivity extends BaseActivity<CustomersPresenter> implemen
         progress = (ContentLoadingProgressBar) findViewById(R.id.progress);
         progress.show();
         getPresenter().getListCustomers();
+
+        initListeners();
+    }
+
+    private void initListeners() {
         buttonLaunchCreate = (FloatingActionButton) findViewById(R.id.fab_launch_createproduct);
         buttonLaunchCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CustomersActivity.this, CreateCustomerActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonLaunchMap = (FloatingActionButton) findViewById(R.id.fab_launch_map);
+        buttonLaunchMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomersActivity.this, MapsActivity.class);
+                intent.putExtra(Constants.EXTRA_CUSTOMERS,customersList);
                 startActivity(intent);
             }
         });
@@ -54,6 +71,7 @@ public class CustomersActivity extends BaseActivity<CustomersPresenter> implemen
 
     @Override
     public void showCustomersList(final ArrayList<Customer> customersList) {
+        this.customersList = customersList;
         runOnUiThread(new Runnable() {
             @Override
             public void run() {

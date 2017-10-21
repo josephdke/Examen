@@ -3,11 +3,13 @@ package co.com.etn.examen.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  * Created by jose.cardenas on 03/10/2017.
  */
 
-public class Location {
+public class Location implements Serializable {
 
     @SerializedName("type")
     @Expose

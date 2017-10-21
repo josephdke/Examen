@@ -15,4 +15,5 @@ public class Constants {
     public static final int UNAUTHORIZED_ERROR_CODE = 401;
     public static final int NOT_FOUND_ERROR_CODE = 404;
 
+    public static final String EXTRA_CUSTOMERS = "CUSTOMERS";
 }

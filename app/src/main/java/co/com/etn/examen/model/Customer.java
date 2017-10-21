@@ -1,15 +1,18 @@
 package co.com.etn.examen.model;
 
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by jose.cardenas on 03/10/2017.
  */
 
-public class Customer {
+public class Customer implements Serializable {
 
     @SerializedName("name")
     @Expose
