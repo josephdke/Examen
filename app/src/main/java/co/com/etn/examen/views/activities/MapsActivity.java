@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -79,6 +80,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void createMarkers() {
+        //mMap.setMapType(mMap.MAP_TYPE_HYBRID);
+        mMap.setMapStyle( MapStyleOptions.loadRawResourceStyle( this, R.raw.style_json ) );
+
         BitmapDescriptor bitmap = bitmapDescriptorFromVector(this,R.drawable.ic_assistant_photo_black_24dp);
         ArrayList<LatLng> markers = new ArrayList<>();
         for( int i=0; i<customersList.size(); i++ ){
